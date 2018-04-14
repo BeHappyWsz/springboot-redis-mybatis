@@ -21,6 +21,7 @@ public class RedisConfig {
     public RedisTemplate redisTemplateInit(){
         //设置序列化Key的实例化对象
         redisTemplate.setKeySerializer(new StringRedisSerializer());
+
         return redisTemplate;
     }
 }
